@@ -231,31 +231,143 @@ export default function DentalClinicPage() {
   const blogPosts = [
     {
       slug: "daily-oral-care-tips",
-      title: "5 Essential Daily Oral Care Tips",
+      title: "5 Essential Daily Oral Care Tips for Healthy Teeth and Gums",
       excerpt:
-        "Learn the fundamental practices for maintaining excellent oral health every day. These evidence-based tips will help you prevent cavities, gum disease, and maintain a bright smile for years to come.",
+        "Discover the fundamental practices for maintaining excellent oral health every day. Learn proper brushing techniques, flossing methods, and preventive care strategies that will help you prevent cavities, gum disease, and maintain a bright smile for years to come.",
       image: "/brushing-teeth-tips.png",
       author: "Dr. Nagesh MDS",
       date: "December 15, 2024",
+      readTime: "8 min read",
+      category: "Oral Care",
+      content: {
+        intro: "Maintaining good oral hygiene is crucial for overall health. Poor dental care can lead to cavities, gum disease, and even systemic health issues.",
+        tips: [
+          "Brush twice daily with fluoride toothpaste for 2 minutes",
+          "Floss daily to remove plaque between teeth",
+          "Use mouthwash to kill bacteria and freshen breath",
+          "Replace toothbrush every 3-4 months",
+          "Visit dentist every 6 months for checkups"
+        ],
+        benefits: "Following these tips can prevent 90% of dental problems and save you from expensive treatments."
+      }
     },
     {
       slug: "dental-implants-guide",
-      title: "Complete Guide to Dental Implants",
+      title: "Complete Guide to Dental Implants: Everything You Need to Know",
       excerpt:
-        "Everything you need to know about dental implant procedures, recovery, and long-term care. Discover why implants are the gold standard for tooth replacement and what to expect during treatment.",
+        "Everything you need to know about dental implant procedures, recovery, and long-term care. Discover why implants are the gold standard for tooth replacement, what to expect during treatment, and how to maintain them for life.",
       image: "/dental-implants-guide.png",
       author: "Dr. Nagesh MDS",
       date: "December 10, 2024",
+      readTime: "12 min read",
+      category: "Dental Implants",
+      content: {
+        intro: "Dental implants are the most advanced and permanent solution for missing teeth, offering natural look and function.",
+        procedure: "The implant process involves 3 stages: implant placement, healing period, and crown attachment.",
+        benefits: [
+          "Natural appearance and function",
+          "Prevents bone loss",
+          "Long-lasting (20+ years)",
+          "No damage to adjacent teeth",
+          "Easy maintenance"
+        ],
+        care: "Proper oral hygiene and regular dental visits are essential for implant longevity."
+      }
     },
     {
       slug: "professional-vs-home-whitening",
-      title: "Professional vs. At-Home Whitening",
+      title: "Professional vs. At-Home Teeth Whitening: Which is Right for You?",
       excerpt:
-        "Compare different teeth whitening options to find the best solution for your needs. Learn about safety, effectiveness, and cost considerations for professional and at-home whitening methods.",
+        "Compare different teeth whitening options to find the best solution for your needs. Learn about safety, effectiveness, cost considerations, and what to expect from professional and at-home whitening methods.",
       image: "/teeth-whitening-options.png",
       author: "Dr. Nagesh MDS",
       date: "December 5, 2024",
+      readTime: "10 min read",
+      category: "Cosmetic Dentistry",
+      content: {
+        intro: "Teeth whitening is one of the most popular cosmetic dental procedures, but choosing between professional and at-home options can be confusing.",
+        comparison: {
+          professional: {
+            effectiveness: "8-10 shades lighter",
+            duration: "1-2 hours",
+            cost: "₹8,000-15,000",
+            safety: "Supervised by dentist"
+          },
+          atHome: {
+            effectiveness: "2-4 shades lighter",
+            duration: "2-4 weeks",
+            cost: "₹2,000-5,000",
+            safety: "Self-administered"
+          }
+        },
+        recommendation: "Professional whitening is recommended for faster, safer, and more dramatic results."
+      }
     },
+    {
+      slug: "root-canal-myths",
+      title: "Debunking Common Root Canal Myths: What You Really Need to Know",
+      excerpt:
+        "Separate fact from fiction about root canal treatment. Learn why modern root canals are painless, how they save your natural teeth, and what the recovery process really involves.",
+      image: "/damaged-teeth-before.png",
+      author: "Dr. Meghana Sharma MDS",
+      date: "December 1, 2024",
+      readTime: "9 min read",
+      category: "Endodontics",
+      content: {
+        intro: "Root canal treatment has an undeserved reputation for being painful. Modern techniques make it comfortable and effective.",
+        myths: [
+          "Myth: Root canals are extremely painful",
+          "Fact: Modern anesthesia makes it painless",
+          "Myth: Root canals cause illness",
+          "Fact: They prevent infection spread",
+          "Myth: Extraction is better than root canal",
+          "Fact: Saving natural teeth is always preferred"
+        ],
+        process: "The procedure involves removing infected pulp, cleaning the canal, and sealing it to prevent reinfection."
+      }
+    },
+    {
+      slug: "orthodontics-guide",
+      title: "Modern Orthodontics: From Traditional Braces to Clear Aligners",
+      excerpt:
+        "Explore the latest advances in orthodontic treatment. Learn about traditional braces, clear aligners, and other options for achieving a perfectly aligned smile.",
+      image: "/crooked-teeth-before.png",
+      author: "Dr. Nagesh MDS",
+      date: "November 25, 2024",
+      readTime: "11 min read",
+      category: "Orthodontics",
+      content: {
+        intro: "Orthodontic treatment has evolved significantly, offering more options than ever for straightening teeth.",
+        options: {
+          traditional: "Metal braces for complex cases",
+          ceramic: "Less visible braces",
+          lingual: "Braces behind teeth",
+          aligners: "Removable clear trays"
+        },
+        benefits: "Properly aligned teeth improve oral health, function, and appearance."
+      }
+    },
+    {
+      slug: "emergency-dental-care",
+      title: "Emergency Dental Care: What to Do When Dental Problems Strike",
+      excerpt:
+        "Learn how to handle common dental emergencies before you can reach a dentist. From toothaches to broken teeth, know the immediate steps to take for relief and prevention of further damage.",
+      image: "/damaged-teeth-before-dental-treatment.png",
+      author: "Dr. Meghana Sharma MDS",
+      date: "November 20, 2024",
+      readTime: "7 min read",
+      category: "Emergency Care",
+      content: {
+        intro: "Dental emergencies can happen anytime. Knowing what to do can save your tooth and reduce pain.",
+        emergencies: [
+          "Severe toothache: Rinse with warm water, use pain relievers",
+          "Broken tooth: Save pieces, rinse mouth, see dentist immediately",
+          "Knocked-out tooth: Keep moist, seek immediate care",
+          "Bleeding gums: Apply pressure, avoid aspirin"
+        ],
+        prevention: "Regular checkups and good oral hygiene prevent most emergencies."
+      }
+    }
   ]
 
   const handleWhatsAppBooking = (formData: FormData) => {
@@ -298,7 +410,7 @@ Please confirm my appointment. Thank you!`
               </div>
               <h1 className="text-2xl font-bold power-dental-brown font-sans">Power Dental</h1>
             </div>
-            <nav className="hidden md:flex space-x-8">
+            <nav className="hidden md:flex space-x-8" role="navigation" aria-label="Main navigation">
               <a href="#services" className="text-gray-700 hover:text-blue-600 transition-colors">
                 Services
               </a>
@@ -328,60 +440,61 @@ Please confirm my appointment. Thank you!`
         </div>
       </header>
 
-      <section ref={heroRef} className="parallax-hero py-20 relative">
-        <div className="floating-icons">
-          <div className="floating-tooth" style={{ top: "10%", left: "10%", fontSize: "2rem" }}>
-            🦷
-          </div>
-          <div className="floating-sparkle" style={{ top: "20%", right: "15%", fontSize: "1.5rem" }}>
-            ✨
-          </div>
-          <div className="floating-tooth" style={{ bottom: "20%", left: "20%", fontSize: "1.8rem" }}>
-            🦷
-          </div>
-          <div className="floating-sparkle" style={{ top: "60%", right: "25%", fontSize: "1.2rem" }}>
-            ✨
-          </div>
-          <div className="floating-tooth" style={{ top: "40%", left: "80%", fontSize: "2.2rem" }}>
-            🦷
-          </div>
-        </div>
-
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="scroll-reveal">
-              <h2 className="text-5xl font-bold text-gray-900 mb-6 font-sans">
-                Power Dental
-                <span className="power-dental-gold block">Dedicated to giving you the best</span>
-              </h2>
-              <p className="text-xl text-gray-600 mb-8">
-                Advanced care, modern technology, and a passion for perfect smiles. Experience premium dental care with
-                state-of-the-art technology and compassionate service.
-              </p>
-              <Button
-                size="lg"
-                className="bg-green-600 hover:bg-green-700 text-white text-lg px-8 py-4 h-auto glow-button"
-                onClick={() =>
-                  window.open("https://wa.me/8686210205?text=Hi! I would like to book an appointment.", "_blank")
-                }
-              >
-                <MessageCircle className="w-5 h-5 mr-3" />
-                Book Appointment on WhatsApp
-              </Button>
+      <main>
+        <section ref={heroRef} className="parallax-hero py-20 relative">
+          <div className="floating-icons">
+            <div className="floating-tooth" style={{ top: "10%", left: "10%", fontSize: "2rem" }}>
+              🦷
             </div>
-            <div className="relative scroll-reveal">
-              <img
-                src="/smiling-dental-patient.png"
-                alt="Two professional doctors in white coats smiling"
-                className="rounded-2xl shadow-2xl"
-              />
-              <div className="absolute -top-4 -right-4 w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center text-white text-2xl animate-spin">
-                🦷
+            <div className="floating-sparkle" style={{ top: "20%", right: "15%", fontSize: "1.5rem" }}>
+              ✨
+            </div>
+            <div className="floating-tooth" style={{ bottom: "20%", left: "20%", fontSize: "1.8rem" }}>
+              🦷
+            </div>
+            <div className="floating-sparkle" style={{ top: "60%", right: "25%", fontSize: "1.2rem" }}>
+              ✨
+            </div>
+            <div className="floating-tooth" style={{ top: "40%", left: "80%", fontSize: "2.2rem" }}>
+              🦷
+            </div>
+          </div>
+
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div className="grid lg:grid-cols-2 gap-12 items-center">
+              <div className="scroll-reveal">
+                <h2 className="text-5xl font-bold text-gray-900 mb-6 font-sans">
+                  Power Dental
+                  <span className="power-dental-gold block">Dedicated to giving you the best</span>
+                </h2>
+                <p className="text-xl text-gray-600 mb-8">
+                  Advanced care, modern technology, and a passion for perfect smiles. Experience premium dental care with
+                  state-of-the-art technology and compassionate service.
+                </p>
+                <Button
+                  size="lg"
+                  className="bg-green-600 hover:bg-green-700 text-white text-lg px-8 py-4 h-auto glow-button"
+                  onClick={() =>
+                    window.open("https://wa.me/8686210205?text=Hi! I would like to book an appointment.", "_blank")
+                  }
+                >
+                  <MessageCircle className="w-5 h-5 mr-3" />
+                  Book Appointment on WhatsApp
+                </Button>
+              </div>
+              <div className="relative scroll-reveal">
+                <img
+                  src="/smiling-dental-patient.png"
+                  alt="Professional dental patient with perfect smile at Power Dental clinic in Hyderabad"
+                  className="rounded-2xl shadow-2xl"
+                />
+                <div className="absolute -top-4 -right-4 w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center text-white text-2xl animate-spin">
+                  🦷
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
       <section className="py-12 bg-gray-50 scroll-reveal">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -390,9 +503,9 @@ Please confirm my appointment. Thank you!`
               <CardContent className="pt-6">
                 <Clock className="w-12 h-12 text-blue-600 mx-auto mb-4 animate-pulse" />
                 <h3 className="font-semibold text-lg mb-2 font-sans">Opening Hours</h3>
-                <p className="text-gray-600">Mon-Fri: 8AM-6PM</p>
-                <p className="text-gray-600">Sat: 9AM-4PM</p>
-                <p className="text-gray-600">Sun: Emergency Only</p>
+                <p className="text-gray-600">Sunday: 10AM-10PM</p>
+                <p className="text-gray-600">Mon-Sat: 9AM-10PM</p>
+                <p className="text-gray-600">Emergency: 24/7</p>
               </CardContent>
             </Card>
 
@@ -564,11 +677,11 @@ Please confirm my appointment. Thank you!`
       <section id="services" className="py-16 bg-gray-50 scroll-reveal">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4 font-sans">Our Premium Services</h2>
-            <p className="text-xl text-gray-600">Comprehensive dental care with cutting-edge technology</p>
+            <h2 className="text-4xl font-bold text-gray-900 mb-4 font-sans">Our Premium Dental Services in Hyderabad</h2>
+            <p className="text-xl text-gray-600">Comprehensive dental care with cutting-edge technology at Power Dental</p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {services.map((service, index) => (
               <div key={index} className="service-flip-card">
                 <div className="service-flip-inner">
@@ -612,13 +725,13 @@ Please confirm my appointment. Thank you!`
       <section id="doctors" className="py-16 scroll-reveal">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4 font-sans">Meet Our Expert Team</h2>
-            <p className="text-xl text-gray-600">Experienced professionals dedicated to your oral health</p>
+            <h2 className="text-4xl font-bold text-gray-900 mb-4 font-sans">Meet Our Expert Dentists in Hyderabad</h2>
+            <p className="text-xl text-gray-600">Experienced professionals dedicated to your oral health at Power Dental</p>
           </div>
 
           {/* Team Banner */}
           <div className="relative mb-16 rounded-2xl overflow-hidden">
-            <img src="/professional-dentists.png" alt="Our dental team" className="w-full h-64 object-cover" />
+            <img src="/professional-dentists.png" alt="Power Dental team of expert dentists in Hyderabad" className="w-full h-64 object-cover" />
             <div className="absolute inset-0 power-dental-dark-brown-bg bg-opacity-80 flex items-center justify-center">
               <div className="text-center text-white">
                 <h3 className="text-3xl font-bold mb-2 font-sans power-dental-gold">Your Smile, Our Passion</h3>
@@ -633,7 +746,7 @@ Please confirm my appointment. Thank you!`
                 <div className="aspect-square bg-gray-100">
                   <img
                     src={doctor.image || "/placeholder.svg"}
-                    alt={doctor.name}
+                    alt={`${doctor.name} - ${doctor.specialization} at Power Dental Hyderabad`}
                     className="w-full h-full object-cover"
                   />
                 </div>
@@ -910,41 +1023,125 @@ Please confirm my appointment. Thank you!`
       <section id="blog" className="py-16 bg-gray-50 scroll-reveal">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4 font-sans">Dental Tips & Guides</h2>
-            <p className="text-xl text-gray-600">Stay informed about your oral health with expert advice</p>
+            <h2 className="text-4xl font-bold text-gray-900 mb-4 font-sans">Dental Health Tips & Expert Guides</h2>
+            <p className="text-xl text-gray-600">Stay informed about your oral health with expert advice from Power Dental</p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
-            {blogPosts.map((post) => (
-              <Card key={post.slug} className="hover:shadow-lg transition-all duration-300 hover:-translate-y-2">
-                <div className="aspect-video bg-gray-200 rounded-t-lg overflow-hidden">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {blogPosts.map((post, index) => (
+              <article key={post.slug} className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-2 group">
+                <div className="relative overflow-hidden">
                   <img
                     src={post.image || "/placeholder.svg"}
-                    alt={post.title}
-                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                    alt={`${post.title} - Dental health guide by ${post.author}`}
+                    className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
                   />
+                  <div className="absolute top-4 left-4">
+                    <span className="bg-blue-600 text-white px-3 py-1 rounded-full text-xs font-semibold">
+                      {post.category}
+                    </span>
+                  </div>
+                  <div className="absolute top-4 right-4">
+                    <span className="bg-white text-gray-700 px-2 py-1 rounded-full text-xs font-medium shadow-sm">
+                      {post.readTime}
+                    </span>
+                  </div>
                 </div>
-                <CardContent className="p-6">
+                
+                <div className="p-6">
                   <div className="flex items-center text-sm text-gray-500 mb-3">
-                    <span>{post.author}</span>
+                    <span className="font-medium text-blue-600">{post.author}</span>
                     <span className="mx-2">•</span>
                     <span>{post.date}</span>
                   </div>
-                  <h3 className="text-xl font-semibold mb-3 font-sans hover:text-blue-600 transition-colors">
+                  
+                  <h3 className="text-xl font-bold mb-3 font-sans group-hover:text-blue-600 transition-colors line-clamp-2">
                     {post.title}
                   </h3>
-                  <p className="text-gray-600 mb-4 leading-relaxed">{post.excerpt}</p>
-                  <Link href={`/blog/${post.slug}`}>
-                    <Button
-                      variant="outline"
-                      className="w-full bg-transparent hover:bg-blue-50 hover:text-blue-600 hover:border-blue-600 transition-all"
-                    >
-                      Read More
-                    </Button>
-                  </Link>
-                </CardContent>
-              </Card>
+                  
+                  <p className="text-gray-600 mb-4 leading-relaxed line-clamp-3">
+                    {post.excerpt}
+                  </p>
+                  
+                  {/* Quick Tips Preview */}
+                  {post.content && (
+                    <div className="mb-4 p-3 bg-blue-50 rounded-lg">
+                      <h4 className="text-sm font-semibold text-blue-800 mb-2">Quick Highlights:</h4>
+                      <ul className="text-xs text-blue-700 space-y-1">
+                        {post.content.tips && post.content.tips.slice(0, 2).map((tip, i) => (
+                          <li key={i} className="flex items-start">
+                            <span className="text-blue-600 mr-1">•</span>
+                            {tip}
+                          </li>
+                        ))}
+                        {post.content.benefits && (
+                          <li className="flex items-start">
+                            <span className="text-blue-600 mr-1">•</span>
+                            {post.content.benefits}
+                          </li>
+                        )}
+                        {post.content.comparison && (
+                          <li className="flex items-start">
+                            <span className="text-blue-600 mr-1">•</span>
+                            Compare professional vs at-home options
+                          </li>
+                        )}
+                      </ul>
+                    </div>
+                  )}
+                  
+                  <div className="flex items-center justify-between">
+                    <Link href={`/blog/${post.slug}`}>
+                      <Button
+                        variant="outline"
+                        className="bg-transparent hover:bg-blue-50 hover:text-blue-600 hover:border-blue-600 transition-all"
+                      >
+                        Read Full Article
+                        <ExternalLink className="w-4 h-4 ml-2" />
+                      </Button>
+                    </Link>
+                    
+                    <div className="flex items-center text-sm text-gray-500">
+                      <Clock className="w-4 h-4 mr-1" />
+                      <span>{post.readTime}</span>
+                    </div>
+                  </div>
+                </div>
+              </article>
             ))}
+          </div>
+          
+          <div className="text-center mt-12">
+            <div className="mb-6">
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">Why Read Our Dental Guides?</h3>
+              <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+                <div className="text-center">
+                  <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-3">
+                    <span className="text-blue-600 text-xl">📚</span>
+                  </div>
+                  <h4 className="font-semibold mb-2">Expert Knowledge</h4>
+                  <p className="text-sm text-gray-600">Written by experienced dentists with years of practice</p>
+                </div>
+                <div className="text-center">
+                  <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-3">
+                    <span className="text-green-600 text-xl">🎯</span>
+                  </div>
+                  <h4 className="font-semibold mb-2">Practical Tips</h4>
+                  <p className="text-sm text-gray-600">Actionable advice you can implement immediately</p>
+                </div>
+                <div className="text-center">
+                  <div className="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-3">
+                    <span className="text-purple-600 text-xl">💡</span>
+                  </div>
+                  <h4 className="font-semibold mb-2">Latest Information</h4>
+                  <p className="text-sm text-gray-600">Up-to-date dental care practices and technology</p>
+                </div>
+              </div>
+            </div>
+            
+            <Button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 text-lg">
+              View All Articles
+            </Button>
           </div>
         </div>
       </section>
@@ -1008,9 +1205,9 @@ Please confirm my appointment. Thank you!`
             <div>
               <h4 className="font-semibold mb-4 font-sans">Hours</h4>
               <ul className="space-y-2 text-gray-400">
-                <li>Mon-Fri: 8AM-6PM</li>
-                <li>Saturday: 9AM-4PM</li>
-                <li>Sunday: Emergency Only</li>
+                <li>Sunday: 10AM-10PM</li>
+                <li>Monday-Saturday: 9AM-10PM</li>
+                <li>Emergency: 24/7</li>
               </ul>
             </div>
           </div>
@@ -1045,6 +1242,7 @@ Please confirm my appointment. Thank you!`
           </div>
         </div>
       )}
+      </main>
     </div>
   )
 }

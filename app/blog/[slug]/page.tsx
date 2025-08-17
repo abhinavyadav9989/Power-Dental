@@ -2,19 +2,19 @@
 
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
-import { ArrowLeft, Calendar, User, Clock } from "lucide-react"
+import { ChevronLeft, Calendar, Users, Clock } from "lucide-react"
 import Link from "next/link"
 import { notFound } from "next/navigation"
 
 const blogPosts = {
   "daily-oral-care-tips": {
-    title: "5 Essential Daily Oral Care Tips",
-    author: "Dr. Swathi Yadav",
+    title: "5 Essential Daily Oral Care Tips for Healthy Teeth and Gums",
+    author: "Dr. Nagesh MDS",
     date: "December 15, 2024",
-    readTime: "5 min read",
+    readTime: "8 min read",
     image: "/brushing-teeth-tips.png",
     excerpt:
-      "Learn the fundamental practices for maintaining excellent oral health every day. These evidence-based tips will help you prevent cavities, gum disease, and maintain a bright smile.",
+      "Discover the fundamental practices for maintaining excellent oral health every day. Learn proper brushing techniques, flossing methods, and preventive care strategies that will help you prevent cavities, gum disease, and maintain a bright smile for years to come.",
     content: `
       <h2>Why Daily Oral Care Matters</h2>
       <p>Your daily oral care routine is the foundation of good dental health. Consistent care prevents most dental problems and saves you from costly treatments later.</p>
@@ -46,13 +46,13 @@ const blogPosts = {
     relatedPosts: ["dental-implants-guide", "professional-vs-home-whitening"],
   },
   "dental-implants-guide": {
-    title: "Complete Guide to Dental Implants",
-    author: "Dr. Raju Khanna",
+    title: "Complete Guide to Dental Implants: Everything You Need to Know",
+    author: "Dr. Nagesh MDS",
     date: "December 10, 2024",
-    readTime: "8 min read",
+    readTime: "12 min read",
     image: "/dental-implants-guide.png",
     excerpt:
-      "Everything you need to know about dental implant procedures, recovery, and long-term care. Discover why implants are the gold standard for tooth replacement.",
+      "Everything you need to know about dental implant procedures, recovery, and long-term care. Discover why implants are the gold standard for tooth replacement, what to expect during treatment, and how to maintain them for life.",
     content: `
       <h2>What Are Dental Implants?</h2>
       <p>Dental implants are titanium posts surgically placed into the jawbone to replace missing tooth roots. They provide a strong foundation for fixed or removable replacement teeth.</p>
@@ -95,13 +95,13 @@ const blogPosts = {
     relatedPosts: ["daily-oral-care-tips", "professional-vs-home-whitening"],
   },
   "professional-vs-home-whitening": {
-    title: "Professional vs. At-Home Whitening: Which is Right for You?",
-    author: "Dr. Swathi Yadav",
+    title: "Professional vs. At-Home Teeth Whitening: Which is Right for You?",
+    author: "Dr. Nagesh MDS",
     date: "December 5, 2024",
-    readTime: "6 min read",
+    readTime: "10 min read",
     image: "/teeth-whitening-options.png",
     excerpt:
-      "Compare different teeth whitening options to find the best solution for your needs. Learn about safety, effectiveness, and cost considerations for each method.",
+      "Compare different teeth whitening options to find the best solution for your needs. Learn about safety, effectiveness, cost considerations, and what to expect from professional and at-home whitening methods.",
     content: `
       <h2>Understanding Tooth Discoloration</h2>
       <p>Teeth can become discolored due to various factors including age, genetics, medications, and lifestyle choices like coffee, wine, and smoking.</p>
@@ -120,7 +120,7 @@ const blogPosts = {
       
       <h3>Considerations</h3>
       <ul>
-        <li>Higher upfront cost</li>
+        <li>Higher upfront cost (₹8,000-15,000)</li>
         <li>May cause temporary sensitivity</li>
         <li>Requires office visit</li>
       </ul>
@@ -158,6 +158,249 @@ const blogPosts = {
     `,
     relatedPosts: ["daily-oral-care-tips", "dental-implants-guide"],
   },
+  "root-canal-myths": {
+    title: "Debunking Common Root Canal Myths: What You Really Need to Know",
+    author: "Dr. Meghana Sharma MDS",
+    date: "December 1, 2024",
+    readTime: "9 min read",
+    image: "/damaged-teeth-before.png",
+    excerpt:
+      "Separate fact from fiction about root canal treatment. Learn why modern root canals are painless, how they save your natural teeth, and what the recovery process really involves.",
+    content: `
+      <h2>Why Root Canals Have a Bad Reputation</h2>
+      <p>Root canal treatment has been unfairly demonized in popular culture. The truth is, modern root canals are comfortable, effective, and often painless procedures that save your natural teeth.</p>
+      
+      <h2>Myth #1: Root Canals Are Extremely Painful</h2>
+      <h3>Fact: Modern Root Canals Are Painless</h3>
+      <p>With today's advanced anesthesia and techniques, root canals are no more painful than getting a filling. Most patients report feeling no pain during the procedure.</p>
+      
+      <h2>Myth #2: Root Canals Cause Illness</h2>
+      <h3>Fact: Root Canals Prevent Infection Spread</h3>
+      <p>Root canals actually remove infected tissue and prevent the spread of infection to other parts of your body. They're a treatment for infection, not a cause.</p>
+      
+      <h2>Myth #3: Extraction is Better Than Root Canal</h2>
+      <h3>Fact: Saving Natural Teeth is Always Preferred</h3>
+      <p>Your natural teeth are designed to last a lifetime. Root canals preserve your natural tooth structure, which is better for chewing, speaking, and maintaining jawbone health.</p>
+      
+      <h2>The Modern Root Canal Process</h2>
+      <h3>1. Diagnosis and Planning</h3>
+      <p>We use advanced imaging to identify the problem and create a treatment plan.</p>
+      
+      <h3>2. Anesthesia</h3>
+      <p>Local anesthesia ensures you're completely comfortable throughout the procedure.</p>
+      
+      <h3>3. Access and Cleaning</h3>
+      <p>We create a small access point and remove infected pulp tissue.</p>
+      
+      <h3>4. Shaping and Filling</h3>
+      <p>The canal is shaped and filled with biocompatible material.</p>
+      
+      <h3>5. Restoration</h3>
+      <p>A crown or filling protects the treated tooth.</p>
+      
+      <h2>Recovery and Aftercare</h2>
+      <p>Most patients return to normal activities the same day. You may experience mild sensitivity for a few days, which can be managed with over-the-counter pain relievers.</p>
+      
+      <h2>When Do You Need a Root Canal?</h2>
+      <ul>
+        <li>Severe toothache, especially when chewing</li>
+        <li>Prolonged sensitivity to hot or cold</li>
+        <li>Darkening of the tooth</li>
+        <li>Swollen, tender gums</li>
+        <li>Pimple on the gums</li>
+      </ul>
+      
+      <h2>Prevention is Key</h2>
+      <p>Good oral hygiene and regular dental checkups can prevent most problems that lead to root canals. Early detection and treatment of cavities can often avoid the need for root canal treatment.</p>
+    `,
+    relatedPosts: ["emergency-dental-care", "daily-oral-care-tips"],
+  },
+  "orthodontics-guide": {
+    title: "Modern Orthodontics: From Traditional Braces to Clear Aligners",
+    author: "Dr. Nagesh MDS",
+    date: "November 25, 2024",
+    readTime: "11 min read",
+    image: "/crooked-teeth-before.png",
+    excerpt:
+      "Explore the latest advances in orthodontic treatment. Learn about traditional braces, clear aligners, and other options for achieving a perfectly aligned smile.",
+    content: `
+      <h2>The Evolution of Orthodontic Treatment</h2>
+      <p>Orthodontics has come a long way from the bulky metal braces of the past. Today, patients have more options than ever to achieve a perfectly aligned smile.</p>
+      
+      <h2>Traditional Metal Braces</h2>
+      <h3>Best For:</h3>
+      <ul>
+        <li>Complex orthodontic cases</li>
+        <li>Severe crowding or spacing</li>
+        <li>Bite correction</li>
+        <li>Patients who prefer a proven, reliable option</li>
+      </ul>
+      
+      <h3>Advantages:</h3>
+      <ul>
+        <li>Most effective for complex cases</li>
+        <li>Predictable results</li>
+        <li>Cost-effective</li>
+        <li>No compliance issues</li>
+      </ul>
+      
+      <h2>Ceramic Braces</h2>
+      <p>Similar to metal braces but with tooth-colored brackets that blend in with your teeth.</p>
+      
+      <h3>Best For:</h3>
+      <ul>
+        <li>Patients who want a less visible option</li>
+        <li>Adults in professional settings</li>
+        <li>Those who want the reliability of braces</li>
+      </ul>
+      
+      <h2>Lingual Braces</h2>
+      <p>Braces placed behind your teeth, making them completely invisible from the front.</p>
+      
+      <h3>Best For:</h3>
+      <ul>
+        <li>Patients who want invisible treatment</li>
+        <li>Those who can't wear aligners</li>
+        <li>Complex cases requiring precise control</li>
+      </ul>
+      
+      <h2>Clear Aligners (Invisalign)</h2>
+      <h3>How They Work:</h3>
+      <p>Custom-made, removable plastic trays that gradually move your teeth into position.</p>
+      
+      <h3>Best For:</h3>
+      <ul>
+        <li>Mild to moderate orthodontic problems</li>
+        <li>Patients who want removable treatment</li>
+        <li>Those who prefer minimal visibility</li>
+        <li>Adults and responsible teenagers</li>
+      </ul>
+      
+      <h3>Advantages:</h3>
+      <ul>
+        <li>Nearly invisible</li>
+        <li>Removable for eating and cleaning</li>
+        <li>No dietary restrictions</li>
+        <li>Fewer office visits</li>
+        <li>Comfortable to wear</li>
+      </ul>
+      
+      <h3>Considerations:</h3>
+      <ul>
+        <li>Requires discipline to wear 20-22 hours daily</li>
+        <li>May not be suitable for complex cases</li>
+        <li>Higher cost than traditional braces</li>
+      </ul>
+      
+      <h2>Which Option is Right for You?</h2>
+      <p>During your consultation, we'll evaluate your specific needs and recommend the best treatment option. Factors we consider include:</p>
+      <ul>
+        <li>Severity of your orthodontic problem</li>
+        <li>Your lifestyle and preferences</li>
+        <li>Your commitment to treatment</li>
+        <li>Your budget</li>
+        <li>Your timeline for results</li>
+      </ul>
+      
+      <h2>Treatment Timeline</h2>
+      <p>Most orthodontic treatments take 12-24 months, depending on the complexity of your case and the treatment option chosen.</p>
+      
+      <h2>Maintaining Your Results</h2>
+      <p>After treatment, you'll need to wear a retainer to maintain your new smile. This is crucial for long-term success.</p>
+    `,
+    relatedPosts: ["daily-oral-care-tips", "professional-vs-home-whitening"],
+  },
+  "emergency-dental-care": {
+    title: "Emergency Dental Care: What to Do When Dental Problems Strike",
+    author: "Dr. Meghana Sharma MDS",
+    date: "November 20, 2024",
+    readTime: "7 min read",
+    image: "/damaged-teeth-before-dental-treatment.png",
+    excerpt:
+      "Learn how to handle common dental emergencies before you can reach a dentist. From toothaches to broken teeth, know the immediate steps to take for relief and prevention of further damage.",
+    content: `
+      <h2>Dental Emergencies: Be Prepared</h2>
+      <p>Dental emergencies can happen at any time, often when you least expect them. Knowing what to do can save your tooth and reduce pain until you can reach professional care.</p>
+      
+      <h2>Severe Toothache</h2>
+      <h3>Immediate Steps:</h3>
+      <ul>
+        <li>Rinse your mouth with warm water</li>
+        <li>Use dental floss to remove any trapped food</li>
+        <li>Take over-the-counter pain relievers (ibuprofen or acetaminophen)</li>
+        <li>Apply a cold compress to the outside of your cheek</li>
+      </ul>
+      
+      <h3>What NOT to Do:</h3>
+      <ul>
+        <li>Don't put aspirin directly on the tooth or gums</li>
+        <li>Don't apply heat to the area</li>
+        <li>Don't ignore the pain - seek professional help</li>
+      </ul>
+      
+      <h2>Broken or Chipped Tooth</h2>
+      <h3>Immediate Steps:</h3>
+      <ul>
+        <li>Save any broken pieces</li>
+        <li>Rinse your mouth with warm water</li>
+        <li>Apply gauze to stop any bleeding</li>
+        <li>Use a cold compress to reduce swelling</li>
+        <li>See a dentist immediately</li>
+      </ul>
+      
+      <h2>Knocked-Out Tooth</h2>
+      <h3>Critical Steps (Time is crucial):</h3>
+      <ol>
+        <li>Pick up the tooth by the crown (top), not the root</li>
+        <li>Rinse gently with water (don't scrub)</li>
+        <li>Try to reinsert it into the socket</li>
+        <li>If you can't reinsert it, keep it moist in milk or saliva</li>
+        <li>Get to a dentist within 30 minutes</li>
+      </ol>
+      
+      <h2>Bleeding Gums</h2>
+      <h3>Immediate Steps:</h3>
+      <ul>
+        <li>Rinse with warm salt water</li>
+        <li>Apply gentle pressure with clean gauze</li>
+        <li>Avoid aspirin (it can increase bleeding)</li>
+        <li>See a dentist if bleeding persists</li>
+      </ul>
+      
+      <h2>Lost Filling or Crown</h2>
+      <h3>Immediate Steps:</h3>
+      <ul>
+        <li>Save the filling or crown</li>
+        <li>Clean the area gently</li>
+        <li>Use dental cement or sugarless gum as temporary protection</li>
+        <li>See a dentist as soon as possible</li>
+      </ul>
+      
+      <h2>When to Seek Immediate Care</h2>
+      <p>Call us immediately if you experience:</p>
+      <ul>
+        <li>Severe pain that doesn't respond to pain relievers</li>
+        <li>Swelling in your face or neck</li>
+        <li>Difficulty breathing or swallowing</li>
+        <li>Bleeding that won't stop</li>
+        <li>A knocked-out tooth</li>
+        <li>Signs of infection (fever, swelling, pus)</li>
+      </ul>
+      
+      <h2>Preventing Dental Emergencies</h2>
+      <ul>
+        <li>Wear a mouthguard during sports</li>
+        <li>Don't use your teeth as tools</li>
+        <li>Avoid chewing hard foods or ice</li>
+        <li>Maintain good oral hygiene</li>
+        <li>Visit your dentist regularly</li>
+      </ul>
+      
+      <h2>Our Emergency Services</h2>
+      <p>At Power Dental, we understand that dental emergencies can't wait. We provide emergency care and are available to help when you need us most.</p>
+    `,
+    relatedPosts: ["root-canal-myths", "daily-oral-care-tips"],
+  },
 }
 
 export default function BlogPost({ params }: { params: { slug: string } }) {
@@ -186,7 +429,7 @@ export default function BlogPost({ params }: { params: { slug: string } }) {
             </div>
             <Link href="/">
               <Button variant="outline">
-                <ArrowLeft className="w-4 h-4 mr-2" />
+                <ChevronLeft className="w-4 h-4 mr-2" />
                 Back to Home
               </Button>
             </Link>
@@ -198,7 +441,7 @@ export default function BlogPost({ params }: { params: { slug: string } }) {
         {/* Article Header */}
         <div className="mb-8">
           <Link href="/#blog" className="text-blue-600 hover:text-blue-700 mb-4 inline-block">
-            <ArrowLeft className="w-4 h-4 inline mr-2" />
+            <ChevronLeft className="w-4 h-4 inline mr-2" />
             Back to Blog
           </Link>
 
@@ -206,7 +449,7 @@ export default function BlogPost({ params }: { params: { slug: string } }) {
 
           <div className="flex items-center text-gray-600 mb-6 space-x-6">
             <div className="flex items-center">
-              <User className="w-4 h-4 mr-2" />
+              <Users className="w-4 h-4 mr-2" />
               <span>{post.author}</span>
             </div>
             <div className="flex items-center">
